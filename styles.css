@@ -25,3 +25,36 @@ body{
 .caixinha:hover, .logo:hover{
     border: 1px solid white;
 }
+.pesquisa{
+    display: inline-block;
+    height: 36px;
+    border: 2px solid rgb(30, 30, 43);
+}
+.pesquisa > *{
+    height: 36px;
+    border: none;
+    float: left;
+}
+.pesquisa button{
+    background-color: orange;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.pesquisa button:active{
+    background-color: rgb(150, 80, 1);
+}
+.pesquisa input{
+    padding: 0px;
+}
+.pesquisa:has(input:focus) {
+    border: 2px solid orange;
+    border-radius: 8px;
+}
+.pesquisa input:focus{
+    border: none;
+}
+.pesquisa select{
+    background-color: gray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
